@@ -1,0 +1,77 @@
+body, html {
+  height: 100%;
+  overflow: hidden; 
+}
+
+.loginPopup {
+  background: linear-gradient(#adb3ff 0%, #567aff 100%);
+  position: absolute;
+  min-height: 100vh;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 999;
+  overflow: hidden;
+  width: 100%;
+}
+
+.cross {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.cross:hover {
+  color: rgb(51, 43, 43);
+}
+
+.inputStyle {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-bottom: 0px;
+  font-size: 16px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+
+}
+
+.login {
+  width: 100%;
+  margin-top: 3px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: linear-gradient(-180deg, #315195 0%, #14213d 100%);
+  font-size: 16px;
+  font-weight: 800;
+  color: white;
+  cursor: pointer;
+  justify-content: center;
+  display: flex;
+}
+
+.inputContainer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .loginPopup {
+    min-width: 100vw;
+  }
+}

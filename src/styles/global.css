@@ -1,0 +1,98 @@
+/* font sizes */
+.fs-sm {
+  font-size: 12px !important;
+}
+.fs-xs {
+  font-size: 14px !important;
+}
+.fs-md {
+  font-size: 16px !important;
+}
+.fs-lg {
+  font-size: 18px !important;
+}
+.fs-xl {
+  font-size: 24px !important;
+}
+
+/* font-weight */
+.fw-400 {
+  font-weight: 400 !important;
+}
+.fw-500 {
+  font-weight: 500 !important;
+}
+.fw-600 {
+  font-weight: 600 !important;
+}
+.fw-700 {
+  font-weight: 700 !important;
+}
+
+/* border-radius */
+
+.br-xs {
+  border-radius: 5px !important;
+}
+.br-sm {
+  border-radius: 8px !important;
+}
+.br-md {
+  border-radius: 12px !important;
+}
+
+/* pointer cursor */
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+
+.text-justify {
+  text-align: justify !important;
+}
+.text-right {
+  text-align : right !important;
+}
+.text-left {
+  text-align: left !important;
+}
+
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.text-color {
+  color: rgb(102,102,102) !important;
+}
+
+.text-dragon {
+  color: #ff5f1f !important
+}
+
+.text-tiger {
+  color:  #1b03a3 !important;
+}
+
+.half-opacity {
+  opacity: 0.5 !important;
+}
+
+.min-card-height {
+  min-height: 136px !important;
+}
+
+.no-events {
+  pointer-events: none !important;
+}
+
+html {
+  overflow: hidden;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  position: fixed;
+}

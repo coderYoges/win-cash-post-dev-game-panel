@@ -1,0 +1,46 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  padding: 20px 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-top: 3px solid #1c3b6a; 
+}
+
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+}
+
+.footer-menu a {
+  color: black;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.menu-divider {
+  color: black;
+  margin: 0 5px;
+}
+
+.download-apk {
+  margin-top: 20px;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.download-button {
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.download-button:hover {
+  background-color: #444;
+}
