@@ -38,6 +38,9 @@ const AndarBahar = ({
   result,
   resetState,
   resetPreviousRecords,
+  tier1Parent,
+  tier2Parent,
+  tier3Parent,
 }) => {
   const [isRulesActive, setRulesActive] = useState(false);
   const [isOrderActive, setOrderActive] = useState(false);
@@ -109,6 +112,9 @@ const AndarBahar = ({
               : orderType === "BAHAR"
               ? "totalBahar"
               : "totalTie",
+          tier1Parent: tier1Parent,
+          tier2Parent: tier2Parent,
+          tier3Parent: tier3Parent,
         });
         if (resp.isSuccessful) {
           await setWalletBalance(balance - numbers * contract);
@@ -216,6 +222,9 @@ const mapStateToProps = (state) => ({
   winnerOption: state.andarBahar.winnerOption,
   isWon: state.andarBahar.isWon,
   result: state.andarBahar.result,
+  tier1Parent: state.auth.tier1Parent,
+  tier2Parent: state.auth.tier2Parent,
+  tier3Parent: state.auth.tier3Parent,
 });
 
 const mapDispatchToProps = {

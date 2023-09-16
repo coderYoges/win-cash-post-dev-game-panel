@@ -11,6 +11,9 @@ export const AuthInitialState = {
   lastLogins: [],
   passwordHistory: [],
   password: "",
+  tier1Parent: "",
+  tier2Parent: "",
+  tier3Parent: "",
 };
 
 const authSlice = createSlice({
@@ -27,6 +30,9 @@ const authSlice = createSlice({
       lastLogins: action.payload.lastLogins,
       passwordHistory: action.payload.passwordHistory,
       password: action.payload.password,
+      tier1Parent: action.payload.tier1Parent,
+      tier2Parent: action.payload.tier2Parent,
+      tier3Parent: action.payload.tier3Parent,
     }),
     setWalletBalance: (state, action) => ({
       ...state,
@@ -48,7 +54,12 @@ const authSlice = createSlice({
   },
 });
 
-export const { setLoginData, setWalletBalance, resetAuth, setGamesList, setPassword } =
-  authSlice.actions;
+export const {
+  setLoginData,
+  setWalletBalance,
+  resetAuth,
+  setGamesList,
+  setPassword,
+} = authSlice.actions;
 
 export default authSlice.reducer;

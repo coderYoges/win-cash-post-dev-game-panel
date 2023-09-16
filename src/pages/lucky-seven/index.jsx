@@ -37,6 +37,9 @@ const LuckySeven = ({
   result,
   resetState,
   resetPreviousRecords,
+  tier1Parent,
+  tier2Parent,
+  tier3Parent,
 }) => {
   const [isRulesActive, setRulesActive] = useState(false);
   const [isOrderActive, setOrderActive] = useState(false);
@@ -105,6 +108,9 @@ const LuckySeven = ({
               : orderType === "DOWN"
               ? "totalDown"
               : "totalTie",
+          tier1Parent: tier1Parent,
+          tier2Parent: tier2Parent,
+          tier3Parent: tier3Parent,
         });
         if (resp.isSuccessful) {
           await setWalletBalance(balance - numbers * contract);
@@ -209,6 +215,9 @@ const mapStateToProps = (state) => ({
   winnerOption: state.luckySeven.winnerOption,
   isWon: state.luckySeven.isWon,
   result: state.luckySeven.result,
+  tier1Parent: state.auth.tier1Parent,
+  tier2Parent: state.auth.tier2Parent,
+  tier3Parent: state.auth.tier3Parent,
 });
 
 const mapDispatchToProps = {

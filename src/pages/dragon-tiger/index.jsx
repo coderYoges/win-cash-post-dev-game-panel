@@ -36,6 +36,9 @@ const DragonTiger = ({
   result,
   resetState,
   resetPreviousRecords,
+  tier1Parent,
+  tier2Parent,
+  tier3Parent,
 }) => {
   const [isRulesActive, setRulesActive] = useState(false);
   const [isOrderActive, setOrderActive] = useState(false);
@@ -101,6 +104,9 @@ const DragonTiger = ({
               : orderType === "DRAGON"
               ? "totalDragon"
               : "totalTie",
+          tier1Parent: tier1Parent,
+          tier2Parent: tier2Parent,
+          tier3Parent: tier3Parent,
         });
 
         if (resp.isSuccessful) {
@@ -202,6 +208,9 @@ const mapStateToProps = (state) => ({
   winnerOption: state.dragonTiger.winnerOption,
   isWon: state.dragonTiger.isWon,
   result: state.dragonTiger.result,
+  tier1Parent: state.auth.tier1Parent,
+  tier2Parent: state.auth.tier2Parent,
+  tier3Parent: state.auth.tier3Parent,
 });
 
 const mapDispatchToProps = {
